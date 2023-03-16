@@ -1,5 +1,6 @@
 import React from "react";
 import { Table } from "react-bootstrap";
+import { Eye, Pen, Trash } from "react-bootstrap-icons";
 
 function CustomerList() {
   return (
@@ -7,12 +8,13 @@ function CustomerList() {
       <Table striped bordered hover size="sm" className="mt-5">
         <thead>
           <tr>
-            <th>Id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Id No.</th>
+            <th> Name</th>
+            <th> Surname</th>
             <th>Email</th>
             <th>Mobile No.</th>
-            <th>Subject</th>
+            <th>Update</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -22,7 +24,13 @@ function CustomerList() {
             <td className="py-2">Palsande</td>
             <td className="py-2">harish@gmail.com</td>
             <td className="py-2">7757958578</td>
-            <td className="py-2">Hello</td>
+
+            <td className="py-2 text-center">
+              <Pen color="blue" className="mx-1" />
+            </td>
+            <td className="py-2 text-center">
+              <Trash color="red" className="mx-1" />
+            </td>
           </tr>
           <tr>
             <td className="py-2">2</td>
@@ -30,7 +38,13 @@ function CustomerList() {
             <td className="py-2">Palsande</td>
             <td className="py-2">harish@gmail.com</td>
             <td className="py-2">7757958578</td>
-            <td className="py-2">Hello</td>
+
+            <td className="py-2 text-center">
+              <Pen color="blue" className="mx-1" />
+            </td>
+            <td className="py-2 text-center">
+              <Trash color="red" className="mx-1" />
+            </td>
           </tr>
           <tr>
             <td className="py-2">3</td>
@@ -38,7 +52,13 @@ function CustomerList() {
             <td className="py-2">Palsande</td>
             <td className="py-2">harish@gmail.com</td>
             <td className="py-2">7757958578</td>
-            <td className="py-2">Hello</td>
+
+            <td className="py-2 text-center">
+              <Pen color="blue" className="mx-1" />
+            </td>
+            <td className="py-2 text-center">
+              <Trash color="red" className="mx-1" />
+            </td>
           </tr>
           <tr>
             <td className="py-2">4</td>
@@ -46,7 +66,13 @@ function CustomerList() {
             <td className="py-2">Palsande</td>
             <td className="py-2">harish@gmail.com</td>
             <td className="py-2">7757958578</td>
-            <td className="py-2">Hello</td>
+
+            <td className="py-2 text-center">
+              <Pen color="blue" className="mx-1" />
+            </td>
+            <td className="py-2 text-center">
+              <Trash color="red" className="mx-1" />
+            </td>
           </tr>
         </tbody>
       </Table>

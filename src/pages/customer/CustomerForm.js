@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 function CustomerForm() {
   const [formFields, setFormFields] = useState([]);
+
+  const handelOnChange = (event) => {};
   return (
     <div>
       <form>
@@ -15,6 +17,7 @@ function CustomerForm() {
               className="form-control"
               id="your-name"
               name="your-name"
+              onChange={handelOnChange}
               required
             />
           </div>
@@ -27,6 +30,7 @@ function CustomerForm() {
               className="form-control"
               id="your-surname"
               name="your-surname"
+              onChange={handelOnChange}
               required
             />
           </div>
@@ -39,6 +43,7 @@ function CustomerForm() {
               className="form-control"
               id="your-email"
               name="your-email"
+              onChange={handelOnChange}
               required
             />
           </div>
@@ -51,6 +56,7 @@ function CustomerForm() {
               className="form-control"
               id="your-number"
               name="your-number"
+              onChange={handelOnChange}
               required
             />
           </div>
@@ -63,6 +69,7 @@ function CustomerForm() {
               className="form-control"
               id="your-subject"
               name="your-subject"
+              onChange={handelOnChange}
             />
           </div>
           <div className="col-12">
